@@ -5,4 +5,4 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/Bertholy/casafami-frontend.git
-	branch = design-montagne
+	branch = main
