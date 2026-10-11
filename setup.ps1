@@ -34,7 +34,7 @@ $script:erreurs = @()
 # ---------------------------------------------------------------- 1. outils
 Etape 1 'Verification des outils'
 $javaVersion = $null
-try { $sortie = & cmd /c 'java -version 2>&1'; if ($sortie -match '"(\d+)') { $javaVersion = [int]$Matches[1] } } catch { }
+try { $sortie = (& cmd /c 'java -version 2>&1') -join ' '; if ($sortie -match '"(\d+)') { $javaVersion = [int]$Matches[1] } } catch { }
 if ($javaVersion -ge 17) { Write-Host "  Java $javaVersion : ok" } else { Manque 'Java 17 ou plus (JDK) : https://adoptium.net' }
 $nodeVersion = $null
 try { $v = (& node --version) -replace '^v', ''; $nodeVersion = [int]($v.Split('.')[0]) } catch { }
