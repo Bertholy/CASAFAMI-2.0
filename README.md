@@ -1,5 +1,17 @@
 # CASAFAMI — site et gestion du cabinet d'accouchement
 
+## ⚡ Démarrage rapide
+
+Après avoir installé **Git, Java 17+, Node 20+ et PostgreSQL** (voir plus bas) :
+
+```powershell
+git clone --recurse-submodules https://github.com/Bertholy/casafami.git
+cd casafami
+.\setup.ps1      # une seule fois : configuration, base de données, dépendances
+.\dev.ps1        # lance le serveur et le site
+```
+Puis ouvrez **http://localhost:5173**.  *(Linux / macOS : `./setup.sh` puis `./dev.sh`.)*
+
 Site public (rendez-vous en ligne, français / malagasy), espace du personnel (médecin, sage-femme, infirmière, secrétaire) et espace super administrateur (comptes, rôles et permissions, planning, sauvegardes, modification du site).
 
 Ce dépôt réunit **tout le projet** : il récupère le serveur et le site en une seule commande.
@@ -42,6 +54,7 @@ cd casafami
 ```
 
 Puis ouvrez **http://localhost:5173**. Le premier démarrage du serveur prend 30 à 60 secondes (les tables sont créées toutes seules).
+
 
 Si vous avez oublié `--recurse-submodules` : `git submodule update --init --recursive`.
 
