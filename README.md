@@ -25,7 +25,7 @@ Maven n'est pas à installer : le projet embarque son propre `mvnw`.
 ## Installer et lancer
 
 ```bash
-git clone --recurse-submodules https://github.com/Bertholy/<nom-de-ce-depot>.git casafami
+git clone --recurse-submodules https://github.com/Bertholy/casafami.git casafami
 cd casafami
 ```
 
