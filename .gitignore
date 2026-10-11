@@ -1,0 +1,11 @@
+# Données et secrets : jamais publiés
+backups/
+*.dump
+.env
+backend/cabinet/config/application.properties
+# Fichiers générés
+node_modules/
+dist/
+target/
+.vscode/
+.idea/

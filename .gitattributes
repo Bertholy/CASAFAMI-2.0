@@ -1,0 +1,9 @@
+# Fins de ligne et encodage maîtrisés : jamais de conversion d'encodage automatique.
+* text=auto eol=lf
+*.ps1 text eol=crlf working-tree-encoding=UTF-8
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.dump binary
+*.zip binary

@@ -1,0 +1,16 @@
+# Tous les fichiers du projet sont en UTF-8 : un éditeur qui lit un autre encodage produit des textes cassés (accents illisibles).
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Windows PowerShell 5 ne lit correctement les accents d'un script qu'avec la signature UTF-8 (BOM).
+[*.ps1]
+charset = utf-8-bom
+end_of_line = crlf
+
+[*.{cmd,bat}]
+end_of_line = crlf

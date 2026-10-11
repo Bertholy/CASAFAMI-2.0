@@ -1,0 +1,8 @@
+[submodule "backend/cabinet"]
+	path = backend/cabinet
+	url = https://github.com/Bertholy/cabinet-medical-backend.git
+	branch = main
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/Bertholy/casafami-frontend.git
+	branch = design-montagne
