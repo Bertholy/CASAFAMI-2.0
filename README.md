@@ -72,7 +72,8 @@ Aucun compte n'est fourni avec le code. Donnez une adresse et un mot de passe à
 - Les SMS (Twilio) et les e-mails sont **simulés** tant qu'ils ne sont pas configurés : voir `DEPLOY.md` §6 bis et §7.
 
 ## Pour aller plus loin
-- `DEPLOY.md` : mise en ligne, HTTPS, sauvegardes, liste de contrôle avant ouverture au public.
+- `DEPLOIEMENT-EN-LIGNE.md` : mise en ligne **gratuite** pas à pas (Neon + Render + Netlify).
+- `DEPLOY.md` : mise en ligne sur un serveur à vous, HTTPS, sauvegardes, liste de contrôle avant ouverture au public.
 - `backend/cabinet/ADMIN_SETUP.md` : rôles, permissions, premier super administrateur.
 - `backend/cabinet/MISES_A_JOUR.md` et `frontend/MISES_A_JOUR.md` : ce qui a changé.
 - Tests : `cd backend/cabinet && ./mvnw test` (base de test `casafami_test` à créer) ; `cd frontend && npm run lint`.
