@@ -36,6 +36,7 @@ Les tables sont créées automatiquement au premier démarrage. Au démarrage, l
 | `CASAFAMI_SMS_MODE`, `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM` | SMS réels (voir §7) | |
 | `CASAFAMI_MAIL_HOST`, `CASAFAMI_MAIL_PORT`, `CASAFAMI_MAIL_USER`, `CASAFAMI_MAIL_PASSWORD`, `CASAFAMI_MAIL_FROM` | e-mails du « mot de passe oublié » (voir §6 bis) | `smtp.gmail.com`, `587` |
 | `CASAFAMI_FRONTEND_URL` | adresse publique du site, utilisée dans le lien envoyé par e-mail | `https://casafami.mg` |
+| `CASAFAMI_DELAI_RESERVATION_JOURS` | délai minimal entre deux réservations en ligne au même nom (0 = aucune limite ; le personnel n'est pas concerné) | `3` (défaut) |
 | `CASAFAMI_BACKUP_DIR`, `CASAFAMI_BACKUP_AUTO`, `CASAFAMI_BACKUP_KEEP`, `CASAFAMI_PG_DUMP` | dossier, activation, nombre conservé et chemin de `pg_dump` pour les sauvegardes automatiques | `D:\sauvegardes`, `true`, `14` |
 
 Ne publiez jamais ces valeurs (dépôt Git, capture d'écran, message).
